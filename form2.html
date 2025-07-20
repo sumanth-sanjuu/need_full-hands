@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('https://res.cloudinary.com/deqtaah2f/image/upload/v1721642056/background_ntqx3u.webp'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+        }
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-control-plaintext {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Form2</title>
+</head>
+<body>
+   <div class="container d-flex flex-column align-items-center justify-content-center">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 form-container">
+            <div class="heading">
+                <h1>User Details</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-12">
+                    <label class="form-label">Name</label>
+                    <p class="form-control-plaintext">Uday</p>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Phone Number</label>
+                    <p class="form-control-plaintext">987654321</p>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Address:</label>
+                    <p class="form-control-plaintext">1234 Main St</p>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Orphanage Name</label>
+                    <p class="form-control-plaintext">Apartment, studio, or floor</p>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Donation Type</label>
+                    <p class="form-control-plaintext">Springfield</p>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">User address</label>
+                    <p class="form-control-plaintext">Illinois</p>
+                </div>
+                <div class="col-12 button-container">
+                    <button id="accept" type="button" class="btn btn-primary">Accept Donation</button>
+                    <a href="track.html"><button type="button" class="btn btn-secondary">Track Donation</button></a>
+                    <a href="ngo.html"><button class="btn btn-primary">Back</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script>
+    document.getElementById("accept").addEventListener("click",function(){
+        alert("User Request Accepted");
+    })
+   </script>
+</body>
+</html>
+
